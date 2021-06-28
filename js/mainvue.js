@@ -1,5 +1,5 @@
 //БД
-const host = "http://127.0.0.1:8000/api";
+const host = "https://poesy123.herokuapp.com/api";
 
 const app = new Vue({
     el: "#app",
