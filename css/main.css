@@ -1,0 +1,581 @@
+/* Шрифт */
+
+@font-face {
+    font-family: "Old Standard TT Italic";
+    src: url("../fonts/19413.ttf");
+}
+
+* {
+    font-family: "Old Standard TT Italic";
+    margin: 0;
+    bottom: 0;
+    letter-spacing: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #f2ded6;
+}
+
+
+/* Скролл */
+
+#toTop {
+    position: fixed;
+    display: inline-block;
+    bottom: 30px;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border-radius: 80px;
+    background: #d9a7c7;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#toTop:hover {
+    background: #fffcdc;
+}
+
+#toTop svg {
+    position: relative;
+    top: 12px;
+    right: -1px;
+    fill: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+#toTop:hover svg {
+    cursor: pointer;
+    fill: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+#toTop.show {
+    opacity: 1;
+    visibility: visible;
+    right: calc(2%);
+}
+
+
+/* Шапка */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 255px 0 255px;
+}
+
+.menuClass1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.adress {
+    display: flex;
+    margin-right: 50px;
+}
+
+.telephone {
+    display: flex;
+    margin-right: 50px;
+}
+
+.chas {
+    display: flex;
+    margin-right: 50px;
+}
+
+.links a {
+    flex-wrap: wrap;
+    margin-right: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Главная */
+
+.menu1 {
+    background-image: linear-gradient( to bottom, rgb(95%, 87%, 84%) 0%, rgba(207, 220, 23, 0) 10%), url("../img/фото1.png");
+    background-position-x: 6%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 70px;
+    padding: 400px 0 320px 0;
+}
+
+.menu1 p {
+    font-size: 30px;
+}
+
+.menu1 h2 {
+    margin-top: -100px;
+    font-size: 100px;
+}
+
+.menu1 h3 {
+    margin-top: 20px;
+    font-size: 100px;
+}
+
+
+/* Главная кнопка услуги */
+
+.menu1 .button {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background-color: #50d8d7;
+    background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%);
+    transition: 500ms;
+    margin: 0 auto;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.menu1 .button::after {
+    top: 3px;
+    left: 3px;
+    width: 143px;
+    height: 43px;
+    display: flex;
+    margin: 3px 0 0 3px;
+    align-items: center;
+    justify-content: center;
+    content: "Услуги";
+    font-size: 20px;
+    color: #eee;
+    border-radius: 25px;
+    background-color: #222;
+    transition: 500ms;
+}
+
+.menu1 .button:hover::after {
+    font-size: 25px;
+    background-color: transparent;
+}
+
+.menu1 .button:hover {
+    transform: scale(0.9);
+}
+
+.menu1 .button:focus {
+    outline: none;
+}
+
+.menu1 button {
+    z-index: 1;
+}
+
+.button {
+    z-index: 1;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* О салоне */
+
+.menu2 p {
+    margin: 0 auto;
+    font-size: 30px;
+    padding: 0 255px;
+}
+
+.menu2 h2 {
+    padding: 50px 0;
+    font-size: 75px;
+    text-align: center;
+}
+
+.menu2Image {
+    background-image: linear-gradient( to bottom, rgb(95%, 87%, 84%) 0%, rgba(207, 220, 23, 0) 10%), url("../img/фото2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 400px;
+    margin: 25px 0;
+}
+
+
+/* Услуги */
+
+.menu3 h2 {
+    font-size: 75px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.uclygi {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 255px;
+}
+
+.uclygi_item {
+    background-image: url(/img/стрижка.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.uclygi_item img {
+    border: 5px solid black;
+    border-radius: 50px;
+}
+
+.uclygi_item p {
+    margin: 240px 0 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+.uclygi button {
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+
+/* Услуги кнопка записаться */
+
+.btn-8 {
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #00ffff 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.btn-8 a {
+    text-decoration: none;
+}
+
+.btn-8 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.btn-8:before,
+.btn-8:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #00ffff;
+    transition: all 0.3s ease;
+}
+
+.btn-8:before {
+    height: 0%;
+    width: 2px;
+}
+
+.btn-8:after {
+    width: 0%;
+    height: 2px;
+}
+
+.btn-8:hover:before {
+    height: 100%;
+}
+
+.btn-8:hover:after {
+    width: 100%;
+}
+
+.btn-8:hover {
+    background: transparent;
+}
+
+.btn-8 span:hover {
+    color: #00ffff;
+}
+
+.btn-8 span:before,
+.btn-8 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #00ffff;
+    transition: all 0.3s ease;
+}
+
+.btn-8 span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.btn-8 span:after {
+    height: 2px;
+    width: 0%;
+}
+
+.btn-8 span:hover:before {
+    height: 100%;
+}
+
+.btn-8 span:hover:after {
+    width: 100%;
+}
+
+
+/* Преимущества */
+
+.menu4 h2 {
+    font-size: 75px;
+    text-align: center;
+}
+
+.pr {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 255px 0 255px;
+}
+
+.pr_item {
+    text-align: center;
+    justify-content: center;
+    font-size: 35px;
+    width: 380px;
+    margin-bottom: 130px;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100% {
+        transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+.menu4 img:hover {
+    animation: bounce 1s;
+}
+
+
+/* Наш персонал */
+
+.menu5 h2 {
+    text-align: center;
+    font-size: 75px;
+}
+
+.pers {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 255px 0 255px;
+}
+
+.pers p,
+.pers h3 {
+    margin: 20px 0;
+    font-size: 35px;
+}
+
+.pers1 {
+    position: relative;
+    text-align: center;
+    height: 500px;
+}
+
+.persButton {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Наш персонал кнопка Цены */
+
+.btn-12 {
+    font-size: 24px;
+    border: none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+}
+
+.btn-12 span {
+    color: #000;
+    background: rgb(186, 235, 255);
+    background: linear-gradient( 0deg, rgba(186, 235, 255) 0%, rgba(186, 235, 255) 100%);
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-12 span:nth-child(1) {
+    box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+.btn-12 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+.btn-12:hover span:nth-child(1) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.btn-12:hover span:nth-child(2) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+
+/* Отзывы */
+
+.menu6 h2 {
+    font-size: 75px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.ot {
+    padding: 0 255px 80px 255px;
+}
+
+.ot1 {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.ot1 p {
+    background: #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.ot :nth-child(odd) img {
+    margin-right: 30px;
+}
+
+.ot :nth-child(even) img {
+    margin-left: 30px;
+}
+
+
+/* Футер */
+
+.footer {
+    padding: 0 255px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    font-size: 25px;
+}
+
+.silki1 {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.silki1 a {
+    text-decoration: none;
+    color: #000;
+}
+
+.silki3 {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.silki3 a {
+    text-decoration: none;
+}

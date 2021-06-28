@@ -1,0 +1,329 @@
+/*Адаптация под все устройства*/
+
+@media screen and (max-width: 1440px) {
+    .pr_item p {
+        font-size: 20px;
+    }
+    .menu1 h2 {
+        font-size: 60px;
+        margin-top: 20px;
+    }
+    .menu1 h3 {
+        font-size: 60px;
+    }
+    .menu1 p {
+        font-size: 25px;
+    }
+    .menu1 {
+        margin-top: 50px;
+        padding: 250px 0 120px 0;
+    }
+    .menu2 h2 {
+        font-size: 60px;
+    }
+    .menu2Image {
+        margin: -40px 0;
+    }
+    .menu3 h2 {
+        font-size: 60px;
+    }
+    .pers img {
+        max-height: 45%;
+    }
+    .pers1 {
+        max-width: 20%;
+    }
+    .pers p {
+        padding-left: 150px;
+        margin-left: -110px;
+        text-align: center;
+    }
+    .pers h3 {
+        padding-left: 150px;
+        font-size: 25px;
+        margin-left: -110px;
+        text-align: center;
+    }
+    .persButton {
+        padding-left: 150px;
+        margin-left: -110px;
+    }
+    .menu6 h2 {
+        margin-top: 10px;
+    }
+    .footer {
+        font-size: 20px;
+    }
+    .ot1 p {
+        font-size: 20px
+    }
+    .ot1 img {
+        max-height: 100px;
+    }
+    .uclygi_item {
+        width: 300px;
+        height: 300px;
+    }
+    .uclygi_item p {
+        margin: 180px 0 20px 0;
+        font-size: 25px;
+    }
+    .uclygi button {
+        max-width: 200px;
+        font-size: 20px;
+    }
+    .menu4 h2 {
+        font-size: 60px;
+    }
+    .menu2 p {
+        font-size: 23px;
+    }
+    .pr_item {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 280px;
+    }
+    .uclygi_item {
+        width: 300px;
+        height: 300px;
+    }
+    .uclygi_item p {
+        margin: 180px 0 20px 0;
+    }
+    .uclygi button {
+        max-width: 200px;
+    }
+    .pers p {
+        font-size: 20px;
+    }
+    .menu5 h2 {
+        font-size: 60px;
+    }
+    .menu5 {
+        margin-top: -80px;
+    }
+    .menu6 h2 {
+        font-size: 60px;
+    }
+    .menu2Image {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 0 100px;
+    }
+    .mainMenu {
+        font-size: 14px;
+    }
+    .menu1 .button::after {
+        width: 120px;
+        height: 40px;
+    }
+    .menu1 .button {
+        width: 125px;
+        height: 45px;
+    }
+    .menu1 {
+        height: 500px;
+        padding: 0;
+    }
+    .menu2 p {
+        padding: 0 20px 0 100px;
+    }
+    .menu2Image {
+        margin-bottom: -120px;
+    }
+    .uclygi_item {
+        width: 250px;
+        height: 250px;
+    }
+    .uclygi {
+        margin: 0 105px;
+    }
+    .pr_item {
+        width: 250px;
+        height: 250px;
+    }
+    .pr {
+        margin: 0 105px;
+    }
+    .pers {
+        margin: 100px 105px 0 50px;
+    }
+    .ot {
+        padding: 0 105px 80px;
+    }
+    .footer {
+        padding: 0 105px 0px;
+    }
+    .uclygi_item p {
+        margin: 150px 0 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-menu {
+        display: flex !important;
+    }
+    .header {
+        display: none;
+    }
+    .menu1 {
+        height: 350px;
+    }
+    .pr_item {
+        margin: 0 0 50px;
+    }
+    .menu2Image {
+        margin-bottom: -220px;
+    }
+    .pers1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: none;
+        max-width: 75% !important;
+    }
+    .pers {
+        margin: 100px 100px 0 100px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: none;
+    }
+    .pers1 h3,
+    .pers1 p,
+    .persButton {
+        padding: 0 !important;
+        text-align: center;
+        margin-left: 0 !important;
+    }
+    .ot1 p {
+        font-size: 16px;
+        padding: 10px !important;
+    }
+    .ot1 img {
+        max-height: 80px;
+    }
+    .footer {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .pr_item img {
+        height: 180px;
+    }
+    .footer {
+        padding: 1em;
+    }
+    .menu1 {
+        background-size: cover;
+    }
+    .uclygi_item {
+        border-radius: 30px
+    }
+    .uclygi_item p {
+        margin-top: 50%;
+        transform: translateY(-50%)
+    }
+    .pr_item {
+        margin-top: 2em;
+        margin-bottom: -30px;
+    }
+    .pr {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pr_item p {
+        font-size: 25px;
+    }
+    .pers {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .pers1 img {
+        max-height: 40%;
+    }
+    .ot {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .ot1 {
+        margin-top: 1em;
+    }
+    .silki3 img {
+        max-height: 70%;
+    }
+    .menu5 h2 {
+        margin-top: 100px;
+    }
+    .pers {
+        margin: 0;
+    }
+    .footer {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .silki1 p {
+        display: none;
+    }
+    .silki1 a {
+        text-align: center;
+    }
+    .stolbik1 h3,
+    .stolbik2 h3,
+    .stolbik3 h3 {
+        font-size: 1em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .menu2Image {
+        display: none;
+    }
+    .menu2 p {
+        padding: 0 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .menu4 h2 {
+        font-size: 48px;
+    }
+    .uclygi {
+        margin-left: 5px;
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu2 h2 {
+        font-size: 48px;
+    }
+    .menu3 h2 {
+        font-size: 48px;
+    }
+    .menu5 h2 {
+        font-size: 48px;
+    }
+    .menu6 h2 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .menu2Image {
+        display: none;
+    }
+}
